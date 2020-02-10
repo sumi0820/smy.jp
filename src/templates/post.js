@@ -28,7 +28,7 @@ import {
 const Share = styled.div`
 display: flex;
 justify-content: flex-end;
-align-items:center
+align-items:center;
 padding: 1.5em 2em 2em;
 `
 
@@ -71,9 +71,9 @@ const PostTemplate = ({ data, pageContext }) => {
 
         <Share>
               
-
+        Share on 
               <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
-              Share on <TwitterIcon size={32} round={true} />
+                <TwitterIcon size={32} round={true} />
               </TwitterShareButton>
               {/* <PocketShareButton>
                 <PocketIcon title={title} url={ config.siteUrl } size={32} round={true} />
