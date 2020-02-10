@@ -14,7 +14,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import styled from 'styled-components'
 import {
-	TwitterShareButton,
+  TwitterShareButton,
+  PocketShareButton,
 } from 'react-share';
 
 
@@ -25,6 +26,7 @@ padding: 1.5em 0 2em;
 `
 
 const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
+const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
 
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -65,7 +67,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <Share>
 
          <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
-           Share on {twitterIcon}         
+           Share on {twitterIcon}  {pocketIcon}       
           </TwitterShareButton>
          </Share>
 
