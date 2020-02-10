@@ -31,8 +31,6 @@ justify-content: flex-end;
 padding: 1.5em 0 2em;
 `
 
-// const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
-// const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
 
 
 
@@ -49,10 +47,6 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const previous = pageContext.prev
   const next = pageContext.next
-const twitterUrl =  <a href={`http://twitter.com/share?url=${config.siteUrl}&text=${title}`}></a>;
-const pocketUrl =  <a href={`http://getpocket.com/edit?url=${config.siteUrl}&title=${title}`}></a>
-
-
 
 
   return (
@@ -74,12 +68,14 @@ const pocketUrl =  <a href={`http://getpocket.com/edit?url=${config.siteUrl}&tit
 
 
         <Share>
-            <TwitterShareButton title={title} url={ twitterUrl } via="sumiya0820" >
-              Share on <TwitterIcon size={32} round={true} />
-            </TwitterShareButton>
-            <PocketShareButton>
-              <PocketIcon title={title} url={ pocketUrl } size={32} round={true} />
-            </PocketShareButton>
+          Share on 
+              <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
+                <TwitterIcon size={32} round={true} />
+              </TwitterShareButton>
+              <PocketShareButton>
+                <PocketIcon title={title} url={ config.siteUrl } size={32} round={true} />
+              </PocketShareButton>
+         
         </Share>
 
       </Container>
