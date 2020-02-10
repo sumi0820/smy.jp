@@ -70,10 +70,10 @@ const PostTemplate = ({ data, pageContext }) => {
 
 
         <Share>
-              Share on
+              
 
               <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
-                <TwitterIcon size={32} round={true} />
+              Share on <TwitterIcon size={32} round={true} />
               </TwitterShareButton>
               {/* <PocketShareButton>
                 <PocketIcon title={title} url={ config.siteUrl } size={32} round={true} />
