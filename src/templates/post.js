@@ -17,7 +17,11 @@ import { faPocket } from "@fortawesome/free-brands-svg-icons"
 import styled from 'styled-components'
 import {
   TwitterShareButton,
-  PocketShareButton,
+  // PocketShareButton,
+} from 'react-share';
+import {
+  TwitterIcon,
+
 } from 'react-share';
 
 
@@ -25,13 +29,12 @@ const Share = styled.div`
 display: flex;
 justify-content: flex-end;
 padding: 1.5em 0 2em;
-background: linear-gradient(0deg, #1da1f2);
-text-shadow: 0 1px 1px #1b98e4;
-box-shadow: 0 2px 8px -1px;
 `
 
 const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
-const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
+// const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
+
+const twitterIconB = <TwitterIcon size={32} round={true} />
 
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -74,9 +77,9 @@ const PostTemplate = ({ data, pageContext }) => {
          <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
            Share on {twitterIcon}  
           </TwitterShareButton>
-          <PocketShareButton title={title} via="sumiya0820" url={config.siteUrl}>
-           {pocketIcon}  
-          </PocketShareButton>
+          <twitterIconB url={shareUrl}>
+            {twitterIconB}
+          </twitterIconB>
            
          </Share>
 
