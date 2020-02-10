@@ -10,14 +10,13 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faPocket } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+// import { faPocket } from "@fortawesome/free-brands-svg-icons"
 
 import styled from 'styled-components'
 import {
   TwitterShareButton,
-  // PocketShareButton,
 } from 'react-share';
 import {
   TwitterIcon,
@@ -31,7 +30,7 @@ justify-content: flex-end;
 padding: 1.5em 0 2em;
 `
 
-const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
+// const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
 // const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
 
 const twitterIconB = <TwitterIcon size={32} round={true} />
@@ -74,12 +73,12 @@ const PostTemplate = ({ data, pageContext }) => {
 
         <Share>
 
-         <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
+         {/* <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
            Share on {twitterIcon}  
-          </TwitterShareButton>
-          <twitterIconB title={title} via="sumiya0820" url={config.siteUrl}>
+          </TwitterShareButton> */}
+          <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl + "/" + slug }>
             {twitterIconB}
-          </twitterIconB>
+          </TwitterShareButton>
            
          </Share>
 
