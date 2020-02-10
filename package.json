@@ -1,7 +1,7 @@
 {
   "name": "smy.jp",
   "description": "Japanese blog",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "repository": "https://sumi0820.github.io/smy.jp/",
   "author": "Sumiya Ushiro",
   "dependencies": {
@@ -9,14 +9,15 @@
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
-    "babel-plugin-styled-components": "^1.10.1",
-    "chalk": "^2.4.2",
-    "contentful-import": "^7.5.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "chalk": "^3.0.0",
+    "contentful-import": "^7.6.2",
     "emotion": "^10.0.27",
-    "gatsby": "^2.9.4",
-    "gatsby-image": "^2.1.4",
+    "gatsby": "^2.19.5",
+    "gatsby-image": "^2.2.39",
+    "gatsby-awesome-pagination": "^0.3.5",
     "gatsby-plugin-canonical-urls": "^2.0.13",
-    "gatsby-plugin-catch-links": "^2.0.15",
+    "gatsby-plugin-catch-links": "^2.1.24",
     "gatsby-plugin-feed": "^2.2.3",
     "gatsby-plugin-google-analytics": "^2.0.21",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -39,14 +40,16 @@
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
-    "prismjs": "^1.16.0",
-    "react": "^16.8.6",
+    "prismjs": "^1.19.0",
+    "react": "^16.12.0",
     "react-custom-share": "^0.4.8",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
     "react-share": "^4.0.1",
-    "styled-components": "^4.3.1"
+    "styled-components": "^4.3.1",
+    "theme-ui": "^0.3.1"
+
   },
   "keywords": [
     "gatsby"
