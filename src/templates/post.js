@@ -33,7 +33,6 @@ padding: 1.5em 0 2em;
 // const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
 // const pocketIcon = <FontAwesomeIcon icon={faPocket} size="lg"/> 
 
-const twitterIconB = <TwitterIcon size={32} round={true} />
 
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -72,15 +71,11 @@ const PostTemplate = ({ data, pageContext }) => {
         <PostLinks previous={previous} next={next} />
 
         <Share>
-
-         {/* <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
-           Share on {twitterIcon}  
-          </TwitterShareButton> */}
-          <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl + "/" + slug }>
-            {twitterIconB}
+          <TwitterShareButton title={title} url={slug } via="sumiya0820" >
+          <TwitterIcon size={32} round={true} />
           </TwitterShareButton>
-           
-         </Share>
+
+          </Share>
 
       </Container>
 
