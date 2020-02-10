@@ -17,19 +17,21 @@ import SEO from '../components/SEO'
 import styled from 'styled-components'
 import {
   TwitterShareButton,
-  PocketShareButton,
+  // PocketShareButton,
 } from 'react-share';
 import {
   TwitterIcon,
-  PocketIcon,
+  // PocketIcon,
 } from 'react-share';
 
 
 const Share = styled.div`
 display: flex;
 justify-content: flex-end;
-padding: 1.5em 0 2em;
+align-items:center
+padding: 1.5em 2em 2em;
 `
+
 
 
 
@@ -68,13 +70,14 @@ const PostTemplate = ({ data, pageContext }) => {
 
 
         <Share>
-          Share on 
+              Share on
+
               <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
                 <TwitterIcon size={32} round={true} />
               </TwitterShareButton>
-              <PocketShareButton>
+              {/* <PocketShareButton>
                 <PocketIcon title={title} url={ config.siteUrl } size={32} round={true} />
-              </PocketShareButton>
+              </PocketShareButton> */}
          
         </Share>
 
