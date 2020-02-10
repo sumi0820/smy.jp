@@ -49,8 +49,11 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const previous = pageContext.prev
   const next = pageContext.next
+const twitterUrl =  <a href={`http://twitter.com/share?url=${props.url}&text=${props.title}`}></a>;
+const pocketUrl =  <a href={`http://getpocket.com/edit?url=${props.url}&title=${props.title}`}></a>
 
- 
+
+
 
   return (
     <Layout>
@@ -69,13 +72,13 @@ const PostTemplate = ({ data, pageContext }) => {
         <PageBody body={body} />
         <PostLinks previous={previous} next={next} />
 
-        
+
         <Share>
-            <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
+            <TwitterShareButton title={title} url={ twitterUrl } via="sumiya0820" >
               Share on <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
             <PocketShareButton>
-              <PocketIcon title={title} size={32} round={true} />
+              <PocketIcon title={title} url={ pocketUrl } size={32} round={true} />
             </PocketShareButton>
         </Share>
 
