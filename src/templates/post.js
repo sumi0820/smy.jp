@@ -50,9 +50,7 @@ const PostTemplate = ({ data, pageContext }) => {
   const previous = pageContext.prev
   const next = pageContext.next
 
-const twitterUrl = config.siteUrl + "/" + slug;
-
-  
+ 
 
   return (
     <Layout>
@@ -71,12 +69,13 @@ const twitterUrl = config.siteUrl + "/" + slug;
         <PageBody body={body} />
         <PostLinks previous={previous} next={next} />
 
+        
         <Share>
-            <TwitterShareButton title={title} url={ twitterUrl } via="sumiya0820" >
+            <TwitterShareButton title={title} url={ config.siteUrl } via="sumiya0820" >
               Share on <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
             <PocketShareButton>
-              <PocketIcon size={32} round={true} />
+              <PocketIcon title={title} size={32} round={true} />
             </PocketShareButton>
         </Share>
 
