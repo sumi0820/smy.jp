@@ -25,6 +25,10 @@ const Share = styled.div`
 display: flex;
 justify-content: flex-end;
 padding: 1.5em 0 2em;
+background: linear-gradient(0deg, #1da1f2, ${rgba("#1DA1F2", 0.7)});
+    text-shadow: 0 1px 1px #1b98e4;
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.1),
+      0 2px 10px -1px ${rgba("#1DA1F2", 0.6)};
 `
 
 const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="lg"/> 
