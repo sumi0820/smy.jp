@@ -49,8 +49,8 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const previous = pageContext.prev
   const next = pageContext.next
-const twitterUrl =  <a href={`http://twitter.com/share?url=${props.url}&text=${props.title}`}></a>;
-const pocketUrl =  <a href={`http://getpocket.com/edit?url=${props.url}&title=${props.title}`}></a>
+const twitterUrl =  <a href={`http://twitter.com/share?url=${config.siteUrl}&text=${title}`}></a>;
+const pocketUrl =  <a href={`http://getpocket.com/edit?url=${config.siteUrl}&title=${title}`}></a>
 
 
 
