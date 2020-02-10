@@ -12,6 +12,8 @@ import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faPocket } from "@fortawesome/free-brands-svg-icons"
+
 import styled from 'styled-components'
 import {
   TwitterShareButton,
@@ -67,8 +69,12 @@ const PostTemplate = ({ data, pageContext }) => {
         <Share>
 
          <TwitterShareButton title={title} via="sumiya0820" url={config.siteUrl}>
-           Share on {twitterIcon}  {pocketIcon}       
+           Share on {twitterIcon}  
           </TwitterShareButton>
+          <PocketShareButton title={title} via="sumiya0820" url={config.siteUrl}>
+           {pocketIcon}  
+          </PocketShareButton>
+           
          </Share>
 
       </Container>
